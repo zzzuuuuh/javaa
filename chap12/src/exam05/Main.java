@@ -1,0 +1,18 @@
+package exam05;
+
+public class Main {
+
+	public static void main(String[] args) {
+		Calculator cal= new Calculator();
+		
+		User user1 = new User("User 1");
+		user1.setCalculator(cal, 100);
+		user1.start();
+		
+		User user2 = new User("User 2");
+		user2.setCalculator(cal, 50);
+		user2.start();
+
+	}
+
+}
